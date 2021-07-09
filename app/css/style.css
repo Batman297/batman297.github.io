@@ -206,9 +206,8 @@ header .header-brand {
 }
 
 header nav ul {
-  display: block;
+  display: table;
   margin: 5px auto;
-  width: fit-content;
 }
 
 header nav ul li {
