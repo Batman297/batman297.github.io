@@ -295,7 +295,7 @@ header nav ul li a {
 }
 
 .projects .project p {
-  text-align: justify;
+  text-align: center;
 }
 
 
@@ -307,8 +307,9 @@ header nav ul li a {
   padding: 0 20px;
 }
 
-.post h3 {
+.post h2 {
   margin: 10px 0;
+  text-transform: uppercase;
 }
 
 .post p {
