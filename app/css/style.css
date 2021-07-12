@@ -186,6 +186,11 @@ a {
   color: #111;
 }
 
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
 
 /* HEADER */
 
@@ -246,7 +251,7 @@ header nav ul li a {
 
 .profile h1 {
   margin: 0 auto;
-  width: 90%;
+
   line-height: 22px;
   font-style: italic;
   font-weight: 400;
@@ -266,7 +271,6 @@ header nav ul li a {
 
 .projects {
   margin: 30px auto;
-  width: 80%;
   margin-bottom: 0;
   text-align: center;
 }
@@ -279,7 +283,7 @@ header nav ul li a {
 .projects .project img {
   width: 150px;
   margin: 15px 0;
-  border-radius: 20%;
+  border-radius: 40%;
   border-bottom-right-radius: 0;
 }
 
@@ -294,21 +298,30 @@ header nav ul li a {
 
 /* FOOTER */
 
-.footer-sm-menu {
-  padding: 10px;
-  border-top: solid 1px #111;
+.menu-bottom {
   margin-top: 30px;
+  border-top: solid 1px #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-sm {
-  float: left;
+  display: flex;
+  justify-content: left;
 }
 
 .footer-sm .link {
-  top: 50%;
-  float: left;
   margin: 5px;
   text-align: center;
+}
+
+.footer-sm .link img {
+  width: 30px;
+}
+
+.footer-sm .link p {
+  font-size: 12px;
 }
 
 .footer-menu {
@@ -316,8 +329,6 @@ header nav ul li a {
 }
 
 .footer-menu ul {
-  width: fit-content;
-  width: -moz-fit-content;
   margin: 5px auto;
 }
 
@@ -325,11 +336,11 @@ header nav ul li a {
   display: block;
   text-align: center;
   list-style: none;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 .footer-menu ul li a {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
 }
