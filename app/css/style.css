@@ -316,6 +316,26 @@ header nav ul li a {
   margin: 10px 0;
 }
 
+.post ul {
+  list-style: none;
+
+}
+
+.post ul li {
+  display: block;
+  margin: 10px 0;
+}
+
+.post ul li span::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.post ul li a {
+  font-weight: 600;
+}
+
+
 /* FOOTER */
 
 .menu-bottom {
