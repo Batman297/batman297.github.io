@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const HomeContainer = styled.div`
   width: 1000px;
   margin: 0 auto;
+  min-height: 100%;
 `;
 
 export const ElementContainer = styled.div`
-  margin-top: 60px;
+  margin: 30px 0;
 `;
 
 export const ElementTitle = styled.p`

@@ -15,6 +15,7 @@ const Home = () => {
       </ElementContainer>
       <ElementContainer>
         <ElementTitle>Important attributes of skills</ElementTitle>
+        <Porject />
       </ElementContainer>
     </HomeContainer>
   );

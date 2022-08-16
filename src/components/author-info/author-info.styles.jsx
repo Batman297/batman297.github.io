@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AuthorInfoContainer = styled.div`
   width: 100%;
-  margin-top: 60px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
 `;
@@ -11,17 +11,17 @@ export const AuthorInfoTextContainer = styled.div`
   width: 700px;
 `;
 
-export const Greeting = styled.p`
+export const GreetingText = styled.p`
   font-size: 35px;
 `;
 
-export const Roles = styled.p`
+export const RolesText = styled.p`
   margin-top: 10px;
   font-size: 57px;
   font-weight: bold;
 `;
 
-export const Description = styled.p`
+export const DescriptionText = styled.p`
   margin-top: 10px;
   font-size: 30px;
   line-height: 35px;
