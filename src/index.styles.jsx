@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   /*
   html5doctor.com Reset Stylesheet
   v1.6.1
@@ -104,7 +104,8 @@ const GlobalStyle = createGlobalStyle`
       vertical-align:middle;
   }
 
-  body {
+  html, body, #root, .App {
+    height: 100%;
     background-color: #E8E8E8;
     margin: 0;
     font-family: "EB Garamond", 'Fira Sans', 'Helvetica Neue',
@@ -123,5 +124,3 @@ const GlobalStyle = createGlobalStyle`
     color: #000;
   }
 `;
-
-export default GlobalStyle;

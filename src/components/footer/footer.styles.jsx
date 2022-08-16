@@ -8,6 +8,9 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  clear: both;
+  margin-top: -110px;
 `;
 
 export const Title = styled.p`

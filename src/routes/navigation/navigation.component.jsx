@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 
 import Footer from "../../components/footer/footer.component";
+import Wrapper from "../../components/wrapper/wrapper.component";
 
 import {
   NavigationContainer,
@@ -23,7 +24,9 @@ const Navigation = () => {
           <NavLink to="/">PROJECTS</NavLink>
         </NavLinks>
       </NavigationContainer>
-      <Outlet />
+      <Wrapper>
+        <Outlet />
+      </Wrapper>
       <Footer />
     </Fragment>
   );
