@@ -15,7 +15,7 @@ export const TitleContainer = styled(Link)`
   align-items: center;
 
   h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
@@ -29,7 +29,7 @@ export const NavLinks = styled.div`
 
 export const NavLink = styled(Link)`
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
 `;

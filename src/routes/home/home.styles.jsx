@@ -6,11 +6,11 @@ export const HomeContainer = styled.div`
   min-height: 100%;
 `;
 
-export const ElementContainer = styled.div`
-  margin: 30px 0;
+export const ElementTitle = styled.p`
+  font-size: 24px;
 `;
 
-export const ElementTitle = styled.p`
-  font-size: 35px;
-  margin-bottom: 25px;
+export const ElementContainer = styled.div`
+  width: 100%;
+  margin: 50px 0;
 `;

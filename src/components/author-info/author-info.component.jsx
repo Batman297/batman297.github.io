@@ -1,9 +1,8 @@
 import authorPhotoUrl from "../../assets/tridenda.png";
 import {
   AuthorInfoContainer,
-  AuthorInfoTextContainer,
-  AuthorInfoImageContainer,
-  GreetingText,
+  TextContainer,
+  NameText,
   RolesText,
   DescriptionText,
 } from "./author-info.styles";
@@ -11,9 +10,11 @@ import {
 const AuthorInfo = () => {
   return (
     <AuthorInfoContainer>
-      <AuthorInfoTextContainer>
-        <GreetingText>Hi, I'm Tri Denda</GreetingText>
-        <RolesText>A web Developer & activist</RolesText>
+      <img src={authorPhotoUrl} alt="Author face" />
+      <TextContainer>
+        <NameText>TRI DENDA</NameText>
+        <RolesText>WEB DEVELOPER & ACTIVIST</RolesText>
+        <hr />
         <DescriptionText>
           I use JavaScipt as the primary language to build front-end and
           back-end websites also mobile applications. For me, programming
@@ -21,10 +22,7 @@ const AuthorInfo = () => {
           raise awareness of porn’s negative effects and help addicts to free
           themselves from porn addiction.
         </DescriptionText>
-      </AuthorInfoTextContainer>
-      <AuthorInfoImageContainer>
-        <img src={authorPhotoUrl} alt="Author face" />
-      </AuthorInfoImageContainer>
+      </TextContainer>
     </AuthorInfoContainer>
   );
 };
