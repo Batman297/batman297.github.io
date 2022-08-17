@@ -12,5 +12,5 @@ export const ElementTitle = styled.p`
 
 export const ElementContainer = styled.div`
   width: 100%;
-  margin: 32px 0;
+  margin: 50px 0;
 `;

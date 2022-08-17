@@ -12,8 +12,9 @@ const AuthorInfo = () => {
     <AuthorInfoContainer>
       <img src={authorPhotoUrl} alt="Author face" />
       <TextContainer>
-        <NameText>Tri Denda</NameText>
-        <RolesText>A web developer & activist</RolesText>
+        <NameText>TRI DENDA</NameText>
+        <RolesText>WEB DEVELOPER & ACTIVIST</RolesText>
+        <hr />
         <DescriptionText>
           I use JavaScipt as the primary language to build front-end and
           back-end websites also mobile applications. For me, programming
