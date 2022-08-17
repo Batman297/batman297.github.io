@@ -6,8 +6,7 @@ export const AuthorInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: calc(15vh - 35px);
-  margin-bottom: 15vh;
+  margin-top: 5vh;
 
   img {
     width: 200px;

@@ -7,6 +7,7 @@ import {
   BlueContainer,
   YellowContainer,
   GreenContainer,
+  LinkContainer,
 } from "./project.styles";
 
 export const COLORS = {
@@ -26,8 +27,8 @@ const getContainerColor = (color = COLORS.base) =>
 
 const Project = ({ color, contains }) => {
   const Container = getContainerColor(color);
-  const { projectTitle, imageUrl, description } = contains;
-  console.log(description);
+  const { projectTitle, imageUrl, viewUrl, repoUrl, description } = contains;
+
   return (
     <Container>
       <ImageContainer>
@@ -37,11 +38,16 @@ const Project = ({ color, contains }) => {
         <ProjectTitleText>{projectTitle}</ProjectTitleText>
         <ListContainer>
           <ul>
-            {description.map((item) => (
-              <li>{item}</li>
+            {description.map((item, index) => (
+              <li key={`li${index}`}>{item}</li>
             ))}
           </ul>
         </ListContainer>
+        <LinkContainer>
+          {viewUrl && <a href={viewUrl}>Live view</a>}
+          {viewUrl && repoUrl && <span>or</span>}
+          {repoUrl && <a href={repoUrl}>Check the repo</a>}
+        </LinkContainer>
       </DescriptionContainer>
     </Container>
   );

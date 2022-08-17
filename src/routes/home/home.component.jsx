@@ -2,37 +2,46 @@ import AuthorInfo from "../../components/author-info/author-info.component";
 import Porject from "../../components/project/project.component";
 
 import imageOneUrl from "../../assets/breactjs-simplestore.png";
+import imageTwoUrl from "../../assets/my-portofolio-blog.png";
 
 import { HomeContainer, ElementTitle, ElementContainer } from "./home.styles";
 
-const projectOne = {
-  projectTitle: "Portfolio Project",
-  imageUrl: imageOneUrl,
-  description: [
-    "Built an online store using ReactJS",
-    "Integrated with Firebase and Stripe",
-    "Manage context using Redux",
-  ],
-};
-
-const projectTwo = {
-  projectTitle: "Breactjs SimpleStore",
-  imageUrl: imageOneUrl,
-  description: [
-    "Built an online store using ReactJS",
-    "Integrated with Firebase and Stripe",
-    "Manage context using Redux",
-  ],
-};
-
-const projectThree = {
-  projectTitle: "AddictionMetter",
-  imageUrl: imageOneUrl,
-  description: [
-    "Built an online store using ReactJSBuilt an expert system app for detection online game addiction using certainty factor algorithm",
-    "Built it using React Native",
-  ],
-};
+const projects = [
+  {
+    projectTitle: "Portfolio Project",
+    imageUrl: imageTwoUrl,
+    viewUrl: "https://tridenda.github.io/",
+    repoUrl: "https://github.com/tridenda/tridenda.github.io",
+    color: "blue",
+    description: [
+      "Build my own portfolio web using ReactJS",
+      "Responsive view on desktop, tablet, or mobile",
+    ],
+  },
+  {
+    projectTitle: "Breactjs SimpleStore",
+    imageUrl: imageOneUrl,
+    viewUrl: "https://breactjs-simplestore.netlify.app/",
+    repoUrl: "https://github.com/tridenda/BreactjsSimpleStore",
+    color: "yellow",
+    description: [
+      "Built an online store using ReactJS",
+      "Integrated with Firebase and Stripe",
+      "Manage context using Redux",
+    ],
+  },
+  {
+    projectTitle: "AddictionMetter",
+    imageUrl: imageOneUrl,
+    viewUrl: null,
+    repoUrl: "https://github.com/tridenda/AddictionMeter",
+    color: "green",
+    description: [
+      "Built an online store using ReactJSBuilt an expert system app for detection online game addiction using certainty factor algorithm",
+      "Built it using React Native",
+    ],
+  },
+];
 
 const Home = () => {
   return (
@@ -40,9 +49,13 @@ const Home = () => {
       <AuthorInfo />
       <ElementContainer>
         <ElementTitle>My recent projects</ElementTitle>
-        <Porject color="blue" contains={projectOne} />
-        <Porject color="yellow" contains={projectTwo} />
-        <Porject color="green" contains={projectThree} />
+        {projects.map((project, index) => (
+          <Porject
+            key={`project${index}`}
+            color={project.color}
+            contains={project}
+          />
+        ))}
       </ElementContainer>
       <ElementContainer>
         <ElementTitle>Important attributes of skills</ElementTitle>

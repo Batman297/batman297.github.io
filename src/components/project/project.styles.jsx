@@ -29,6 +29,7 @@ export const ImageContainer = styled.div`
 
   img {
     width: 300px;
+    border: 1px solid #ccc;
   }
 `;
 
@@ -48,4 +49,17 @@ export const ListContainer = styled.div`
   padding-left: 25px;
   line-height: 32px;
   list-style-position: outside;
+`;
+
+export const LinkContainer = styled.div`
+  margin-top: 15px;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+
+  span {
+    margin: 0 10px;
+    font-weight: normal;
+  }
 `;
