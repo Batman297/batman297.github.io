@@ -1,10 +1,16 @@
 import AuthorInfo from "../../components/author-info/author-info.component";
 import Porject from "../../components/project/project.component";
+import SkillTag from "../../components/skill-tag/skill-tag.component";
 
 import imageOneUrl from "../../assets/breactjs-simplestore.png";
 import imageTwoUrl from "../../assets/my-portofolio-blog.png";
 
-import { HomeContainer, ElementTitle, ElementContainer } from "./home.styles";
+import {
+  HomeContainer,
+  ElementTitle,
+  ElementContainer,
+  SkillsContainer,
+} from "./home.styles";
 
 const projects = [
   {
@@ -43,6 +49,19 @@ const projects = [
   },
 ];
 
+const tags = [
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "React",
+  "React Native",
+  "Redux",
+  "PhotoShop",
+  "Figma",
+  "Git",
+  "Linux",
+];
+
 const Home = () => {
   return (
     <HomeContainer>
@@ -59,6 +78,11 @@ const Home = () => {
       </ElementContainer>
       <ElementContainer>
         <ElementTitle>Important attributes of skills</ElementTitle>
+        <SkillsContainer>
+          {tags.map((tag, index) => (
+            <SkillTag key={`tag${index}`} tag={tag} />
+          ))}
+        </SkillsContainer>
       </ElementContainer>
     </HomeContainer>
   );

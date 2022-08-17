@@ -1,5 +1,7 @@
-const SkillTag = () => {
-  return <h1>I'm the skill tag</h1>;
+import { SkillTagContainer } from "./skill-tag.styles";
+
+const SkillTag = ({ tag }) => {
+  return <SkillTagContainer>{tag}</SkillTagContainer>;
 };
 
 export default SkillTag;

@@ -14,3 +14,11 @@ export const ElementContainer = styled.div`
   width: 100%;
   margin: 50px 0;
 `;
+
+export const SkillsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+`;
