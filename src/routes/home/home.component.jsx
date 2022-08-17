@@ -1,7 +1,7 @@
 import AuthorInfo from "../../components/author-info/author-info.component";
 import Porject from "../../components/project/project.component";
 
-import { HomeContainer, ElementContainer, ElementTitle } from "./home.styles";
+import { HomeContainer, ElementTitle, ElementContainer } from "./home.styles";
 
 const Home = () => {
   return (
@@ -15,7 +15,6 @@ const Home = () => {
       </ElementContainer>
       <ElementContainer>
         <ElementTitle>Important attributes of skills</ElementTitle>
-        <Porject />
       </ElementContainer>
     </HomeContainer>
   );

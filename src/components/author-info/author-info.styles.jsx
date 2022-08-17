@@ -2,37 +2,39 @@ import styled from "styled-components";
 
 export const AuthorInfoContainer = styled.div`
   width: 100%;
-  margin-top: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+
+  img {
+    width: 200px;
+  }
 `;
 
-export const AuthorInfoTextContainer = styled.div`
+export const TextContainer = styled.div`
   width: 700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
 `;
 
-export const GreetingText = styled.p`
-  font-size: 35px;
+export const NameText = styled.p`
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
 `;
 
 export const RolesText = styled.p`
-  margin-top: 10px;
-  font-size: 57px;
-  font-weight: bold;
+  font-size: 22px;
+  /* font-weight: bold; */
+  font-style: italic;
+  margin-bottom: 10px;
 `;
 
 export const DescriptionText = styled.p`
-  margin-top: 10px;
-  font-size: 30px;
-  line-height: 35px;
-`;
-
-export const AuthorInfoImageContainer = styled.div`
-  width: 300px;
-  display: flex;
-  align-items: center;
-
-  img {
-    width: 300px;
-  }
+  font-size: 22px;
+  line-height: 32px;
 `;
