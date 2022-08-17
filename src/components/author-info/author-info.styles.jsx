@@ -28,8 +28,7 @@ export const NameText = styled.p`
 `;
 
 export const RolesText = styled.p`
-  font-size: 22px;
-  /* font-weight: bold; */
+  font-size: 20px;
   font-style: italic;
   margin-bottom: 10px;
 `;
