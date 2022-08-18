@@ -5,6 +5,7 @@ import {
   NameText,
   RolesText,
   DescriptionText,
+  CustomLine,
 } from "./author-info.styles";
 
 const AuthorInfo = () => {
@@ -14,7 +15,7 @@ const AuthorInfo = () => {
       <TextContainer>
         <NameText>TRI DENDA</NameText>
         <RolesText>WEB DEVELOPER & ACTIVIST</RolesText>
-        <hr />
+        <CustomLine />
         <DescriptionText>
           I use JavaScipt as the primary language to build front-end and
           back-end websites also mobile applications. For me, programming

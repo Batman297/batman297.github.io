@@ -6,19 +6,28 @@ export const AuthorInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: calc(15vh - 35px);
-  margin-bottom: 15vh;
+  margin-top: 5vh;
 
   img {
     width: 200px;
   }
+
+  @media screen and (max-width: 750px) {
+    img {
+      width: 180px;
+    }
+  }
 `;
 
 export const TextContainer = styled.div`
-  width: 850px;
+  width: 85%;
   margin: 0 auto;
   margin-top: 10px;
   text-align: center;
+
+  @media screen and (max-width: 750px) {
+    width: 95%;
+  }
 `;
 
 export const NameText = styled.p`
@@ -27,15 +36,36 @@ export const NameText = styled.p`
   margin-top: 10px;
   margin-bottom: 5px;
   letter-spacing: 5px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
 `;
 
 export const RolesText = styled.p`
   font-size: 18px;
   margin-bottom: 10px;
   letter-spacing: 5px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
 `;
 
 export const DescriptionText = styled.p`
   font-size: 22px;
   line-height: 32px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+`;
+
+export const CustomLine = styled.hr`
+  @media screen and (max-width: 750px) {
+    margin: 5px 0;
+  }
 `;
