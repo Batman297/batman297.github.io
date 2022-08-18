@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import Footer from "../../components/footer/footer.component";
@@ -9,9 +9,17 @@ import {
   TitleContainer,
   NavLinks,
   NavLink,
+  HamburgerButton,
+  XmarkButton,
 } from "./navigation.styles";
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenuHandler = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Fragment>
       <NavigationContainer>
@@ -22,6 +30,8 @@ const Navigation = () => {
           <NavLink to="/">RESUME</NavLink>
           <NavLink to="blog">BLOG</NavLink>
           <NavLink to="/">PROJECTS</NavLink>
+          {!isOpen && <HamburgerButton onClick={openMenuHandler} />}
+          {isOpen && <XmarkButton onClick={openMenuHandler} />}
         </NavLinks>
       </NavigationContainer>
       <Wrapper>

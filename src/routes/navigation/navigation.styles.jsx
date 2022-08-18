@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import { ReactComponent as BarSolid } from "../../assets/bars-solid.svg";
+import { ReactComponent as XmarkSolid } from "../../assets/xmark-solid.svg";
+
 export const NavigationContainer = styled.div`
   width: 1000px;
   height: 35px;
@@ -44,4 +47,24 @@ export const NavLink = styled(Link)`
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
+`;
+
+export const HamburgerButton = styled(BarSolid)`
+  width: 16px;
+
+  @media screen and (min-width: 550px) {
+    display: none;
+  }
+`;
+
+export const XmarkButton = styled(XmarkSolid)`
+  width: 16px;
+
+  @media screen and (min-width: 550px) {
+    display: none;
+  }
 `;
