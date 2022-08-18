@@ -3,7 +3,7 @@ import Porject from "../../components/project/project.component";
 import SkillTag from "../../components/skill-tag/skill-tag.component";
 
 import imageOneUrl from "../../assets/breactjs-simplestore.png";
-import imageTwoUrl from "../../assets/my-portofolio-blog.png";
+import imageTwoUrl from "../../assets/portfolio-blog-project.png";
 
 import {
   HomeContainer,

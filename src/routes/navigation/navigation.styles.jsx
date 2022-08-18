@@ -7,6 +7,10 @@ export const NavigationContainer = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 export const TitleContainer = styled(Link)`
@@ -17,6 +21,10 @@ export const TitleContainer = styled(Link)`
   h1 {
     font-size: 16px;
   }
+
+  @media screen and (max-width: 1000px) {
+    padding-left: 25px;
+  }
 `;
 
 export const NavLinks = styled.div`
@@ -25,6 +33,10 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media screen and (max-width: 1000px) {
+    padding-right: 25px;
+  }
 `;
 
 export const NavLink = styled(Link)`

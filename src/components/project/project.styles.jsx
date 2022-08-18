@@ -8,6 +8,16 @@ export const BaseContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+
+  @media screen and (max-width: 900px) {
+    height: 250px;
+  }
+
+  @media screen and (max-width: 750px) {
+    height: 100%;
+    padding: 20px 0;
+    flex-direction: column;
+  }
 `;
 
 export const BlueContainer = styled(BaseContainer)`
@@ -25,23 +35,50 @@ export const GreenContainer = styled(BaseContainer)`
 export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
+  width: 40%;
   margin-left: 10%;
 
   img {
-    width: 300px;
+    width: 100%;
     border: 1px solid #ccc;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin-left: 5%;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 50%;
+    margin: unset;
   }
 `;
 
 export const DescriptionContainer = styled.div`
+  width: 60%;
   margin-left: 5%;
   margin-right: 10%;
+
+  @media screen and (max-width: 900px) {
+    margin-right: 5%;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 80%;
+    margin: unset;
+    margin-top: 20px;
+    text-align: center;
+  }
 `;
 
 export const ProjectTitleText = styled.div`
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
 `;
 
 export const ListContainer = styled.div`
@@ -49,6 +86,18 @@ export const ListContainer = styled.div`
   padding-left: 25px;
   line-height: 32px;
   list-style-position: outside;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding: unset;
+    ul {
+      list-style-type: none;
+    }
+  }
 `;
 
 export const LinkContainer = styled.div`
@@ -61,5 +110,15 @@ export const LinkContainer = styled.div`
   span {
     margin: 0 10px;
     font-weight: normal;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 750px) {
+    justify-content: center;
+    margin-top: 15px;
   }
 `;
