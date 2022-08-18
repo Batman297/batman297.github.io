@@ -51,6 +51,10 @@ export const ImageContainer = styled.div`
     width: 50%;
     margin: unset;
   }
+
+  @media screen and (max-width: 550px) {
+    width: 70%;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -68,6 +72,10 @@ export const DescriptionContainer = styled.div`
     margin-top: 20px;
     text-align: center;
   }
+
+  @media screen and (max-width: 750px) {
+    width: 90%;
+  }
 `;
 
 export const ProjectTitleText = styled.div`
@@ -78,6 +86,10 @@ export const ProjectTitleText = styled.div`
   @media screen and (max-width: 1000px) {
     font-size: 26px;
     margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 750px) {
+    margin-bottom: 15px;
   }
 `;
 
@@ -94,8 +106,15 @@ export const ListContainer = styled.div`
 
   @media screen and (max-width: 750px) {
     padding: unset;
+
     ul {
       list-style-type: none;
+      border-bottom: 1px solid #4f4f4f;
+    }
+
+    li {
+      margin: 3px 0;
+      border-top: 1px solid #4f4f4f;
     }
   }
 `;

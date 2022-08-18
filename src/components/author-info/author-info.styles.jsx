@@ -24,6 +24,10 @@ export const TextContainer = styled.div`
   margin: 0 auto;
   margin-top: 10px;
   text-align: center;
+
+  @media screen and (max-width: 750px) {
+    width: 95%;
+  }
 `;
 
 export const NameText = styled.p`

@@ -44,9 +44,9 @@ const Project = ({ color, contains }) => {
           </ul>
         </ListContainer>
         <LinkContainer>
-          {viewUrl && <a href={viewUrl}>Live view</a>}
+          {viewUrl && <a href={viewUrl}>Live View</a>}
           {viewUrl && repoUrl && <span>or</span>}
-          {repoUrl && <a href={repoUrl}>Check the repo</a>}
+          {repoUrl && <a href={repoUrl}>Source Code</a>}
         </LinkContainer>
       </DescriptionContainer>
     </Container>

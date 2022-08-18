@@ -28,6 +28,10 @@ export const TitleContainer = styled(Link)`
   @media screen and (max-width: 1000px) {
     padding-left: 25px;
   }
+
+  @media screen and (max-width: 550px) {
+    padding-left: 10px;
+  }
 `;
 
 export const NavLinks = styled.div`
@@ -39,6 +43,10 @@ export const NavLinks = styled.div`
 
   @media screen and (max-width: 1000px) {
     padding-right: 25px;
+  }
+
+  @media screen and (max-width: 550px) {
+    padding-right: 10px;
   }
 `;
 
@@ -67,4 +75,24 @@ export const XmarkButton = styled(XmarkSolid)`
   @media screen and (min-width: 550px) {
     display: none;
   }
+`;
+
+export const NavLinksMobile = styled.div`
+  width: 100%;
+  border-top: 1px solid #4f4f4f;
+  border-bottom: 1px solid #4f4f4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+
+  @media screen and (min-width: 550px) {
+    display: none;
+  }
+`;
+
+export const NavLinkMobile = styled(Link)`
+  font-weight: bold;
 `;

@@ -11,6 +11,8 @@ import {
   NavLink,
   HamburgerButton,
   XmarkButton,
+  NavLinksMobile,
+  NavLinkMobile,
 } from "./navigation.styles";
 
 const Navigation = () => {
@@ -34,6 +36,13 @@ const Navigation = () => {
           {isOpen && <XmarkButton onClick={openMenuHandler} />}
         </NavLinks>
       </NavigationContainer>
+      {isOpen && (
+        <NavLinksMobile>
+          <NavLinkMobile to="/">RESUME</NavLinkMobile>
+          <NavLinkMobile to="blog">BLOG</NavLinkMobile>
+          <NavLinkMobile to="/">PROJECTS</NavLinkMobile>
+        </NavLinksMobile>
+      )}
       <Wrapper>
         <Outlet />
       </Wrapper>
