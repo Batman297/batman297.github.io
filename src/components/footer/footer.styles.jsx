@@ -11,13 +11,13 @@ export const FooterContainer = styled.div`
   clear: both;
   margin-top: -110px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     width: calc(100% - 50px);
     margin-top: unset;
     margin: 0 25px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     width: calc(100% - 20px);
     margin: 0 10px;
   }

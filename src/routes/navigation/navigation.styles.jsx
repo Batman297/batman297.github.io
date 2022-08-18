@@ -11,7 +11,7 @@ export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     width: 100%;
   }
 `;
@@ -25,7 +25,7 @@ export const TitleContainer = styled(Link)`
     font-size: 16px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     padding-left: 25px;
   }
 
@@ -41,7 +41,7 @@ export const NavLinks = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     padding-right: 25px;
   }
 

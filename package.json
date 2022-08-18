@@ -1,7 +1,7 @@
 {
   "name": "My portfolio and blog app",
   "homepage": "http://tridenda.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
