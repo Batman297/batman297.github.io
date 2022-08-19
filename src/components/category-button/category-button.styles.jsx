@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-export const BaseCategoryContainer = styled.div`
+export const BaseCategoryButton = styled.button`
   background-color: #e8e8e8;
   border: 1px solid #505050;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 3px 10px;
+  cursor: pointer;
 `;
 
 export const CategoryNameText = styled.p`
-  font-size: 14px;
+  font-size: 12px;
 `;
 
-export const ActiveCategoryContainer = styled(BaseCategoryContainer)`
+export const ActiveCategoryButton = styled(BaseCategoryButton)`
   background-color: #bdbdbd;
 `;
