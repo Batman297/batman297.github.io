@@ -3,30 +3,30 @@ import {
   DescriptionContainer,
   ProjectTitleText,
   ListContainer,
-  BaseContainer,
-  BlueContainer,
-  YellowContainer,
-  GreenContainer,
+  BaseProjectContainer,
+  BlueProjectContainer,
+  YellowProjectContainer,
+  GreenProjectContainer,
   LinkContainer,
 } from "./project.styles";
 
-export const COLORS = {
+export const PROJECT_TYPES_CLASSES = {
   base: "base",
   blue: "blue",
   yellow: "yellow",
   green: "green",
 };
 
-const getContainerColor = (color = COLORS.base) =>
+const getContainerType = (color = PROJECT_TYPES_CLASSES.base) =>
   ({
-    [COLORS.base]: BaseContainer,
-    [COLORS.blue]: BlueContainer,
-    [COLORS.yellow]: YellowContainer,
-    [COLORS.green]: GreenContainer,
+    [PROJECT_TYPES_CLASSES.base]: BaseProjectContainer,
+    [PROJECT_TYPES_CLASSES.blue]: BlueProjectContainer,
+    [PROJECT_TYPES_CLASSES.yellow]: YellowProjectContainer,
+    [PROJECT_TYPES_CLASSES.green]: GreenProjectContainer,
   }[color]);
 
 const Project = ({ color, contains }) => {
-  const Container = getContainerColor(color);
+  const Container = getContainerType(color);
   const { projectTitle, imageUrl, viewUrl, repoUrl, description } = contains;
 
   return (
