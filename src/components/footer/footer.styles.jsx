@@ -31,6 +31,10 @@ export const Title = styled.p`
   @media screen and (max-width: 900px) {
     font-size: 26px;
   }
+
+  @media screen and (max-width: 750px) {
+    font-size: 22px;
+  }
 `;
 
 export const Text = styled.p`
@@ -42,8 +46,8 @@ export const Text = styled.p`
     font-size: 20px;
   }
 
-  @media screen and (max-width: 550px) {
-    font-size: 19px;
+  @media screen and (max-width: 750px) {
+    font-size: 18px;
   }
 `;
 

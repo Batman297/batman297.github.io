@@ -30,6 +30,7 @@ export const PostLink = styled(Link)`
   justify-content: space-between;
   border-top: 1px solid #9b9b9b;
   padding: 5px 0;
+  transition: padding-left 0.5s;
 
   :hover {
     padding-left: 15px;

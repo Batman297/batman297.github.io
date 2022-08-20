@@ -133,7 +133,7 @@ export const LinkContainer = styled.div`
 
   @media screen and (max-width: 1000px) {
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 12px;
   }
 
   @media screen and (max-width: 750px) {
