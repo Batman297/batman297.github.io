@@ -65,6 +65,7 @@ export const getCustomDate = (date) => {
     "August",
     "September",
     "October",
+    "November",
     "December",
   ];
 

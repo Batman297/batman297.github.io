@@ -21,7 +21,7 @@ export const posts = [
     slug: "pj-bupati-bekasi-tetapkan-35-hektare-lahan-sawah-abadi",
     title: "Pj Bupati Bekasi Tetapkan 35 Hektare Lahan Sawah Abadi",
     categories: ["PhotoShop", "Music"],
-    createdAt: new Date("2018-03-04"),
+    createdAt: new Date("2018-09-30"),
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const posts = [
     slug: "prakiraan-cuaca-di-medan-hari-ini-17-juni-2022-pagi-cerah-berawan",
     title:
       "Prakiraan Cuaca di Medan Hari Ini, 17 Juni 2022: Pagi Cerah Berawan, Siang & Malam",
-    categories: ["PhotoShop", "JavaScript", "Music"],
+    categories: ["PhotoShop", "JavaScript", "Music", "CSS", "Story"],
     createdAt: new Date("2022-05-04"),
   },
 ];
