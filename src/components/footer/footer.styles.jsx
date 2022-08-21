@@ -11,15 +11,16 @@ export const FooterContainer = styled.div`
   clear: both;
   margin-top: -110px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     width: calc(100% - 50px);
-    margin-top: unset;
     margin: 0 25px;
+    margin-top: -110px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 900px) {
     width: calc(100% - 20px);
     margin: 0 10px;
+    margin-top: -110px;
   }
 `;
 
@@ -29,6 +30,10 @@ export const Title = styled.p`
 
   @media screen and (max-width: 900px) {
     font-size: 26px;
+  }
+
+  @media screen and (max-width: 750px) {
+    font-size: 22px;
   }
 `;
 
@@ -41,8 +46,8 @@ export const Text = styled.p`
     font-size: 20px;
   }
 
-  @media screen and (max-width: 550px) {
-    font-size: 19px;
+  @media screen and (max-width: 750px) {
+    font-size: 18px;
   }
 `;
 

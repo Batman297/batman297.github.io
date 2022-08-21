@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BaseContainer = styled.div`
+export const BaseProjectContainer = styled.div`
   width: 100%;
   height: 300px;
   margin: 15px auto;
@@ -20,15 +20,15 @@ export const BaseContainer = styled.div`
   }
 `;
 
-export const BlueContainer = styled(BaseContainer)`
+export const BlueProjectContainer = styled(BaseProjectContainer)`
   background-color: #9cccf6;
 `;
 
-export const YellowContainer = styled(BaseContainer)`
+export const YellowProjectContainer = styled(BaseProjectContainer)`
   background-color: #f5d593;
 `;
 
-export const GreenContainer = styled(BaseContainer)`
+export const GreenProjectContainer = styled(BaseProjectContainer)`
   background-color: #93dec7;
 `;
 
@@ -133,7 +133,7 @@ export const LinkContainer = styled.div`
 
   @media screen and (max-width: 1000px) {
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 12px;
   }
 
   @media screen and (max-width: 750px) {
