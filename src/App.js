@@ -4,10 +4,7 @@ import Navigation from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
 import Blog from "./routes/blog/blog.component";
 import BlogPost from "./components/blog-post/blog-post.component";
-
-const NotFound = () => {
-  return <h1>Not founded</h1>;
-};
+import NotFound from "./components/not-found/not-found.component";
 
 const App = () => {
   return (

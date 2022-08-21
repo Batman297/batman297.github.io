@@ -4,6 +4,7 @@ import SkillTag from "../../components/skill-tag/skill-tag.component";
 
 import imageOneUrl from "../../assets/breactjs-simplestore.png";
 import imageTwoUrl from "../../assets/portfolio-blog-project.png";
+import imageThreeUrl from "../../assets/addiction-metter.png";
 
 import {
   HomeContainer,
@@ -27,7 +28,7 @@ const projects = [
   },
   {
     projectTitle: "AddictionMetter",
-    imageUrl: imageOneUrl,
+    imageUrl: imageThreeUrl,
     viewUrl: null,
     repoUrl: "https://github.com/tridenda/AddictionMeter",
     color: "yellow",
