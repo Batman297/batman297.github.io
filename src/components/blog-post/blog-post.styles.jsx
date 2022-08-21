@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BlogPostContainer = styled.div`
   width: 1000px;
   margin: 0 auto;
+  padding: 50px 0;
 
   @media screen and (max-width: 1050px) {
     width: 100%;
@@ -114,11 +115,14 @@ export const Article = styled.article`
   }
 
   blockquote {
-    width: calc(700px - 20px);
-    padding: 5px 0;
-    padding-left: 20px;
+    width: calc(700px - 40px);
+    padding: 5px 20px;
     background-color: #cfcfcf;
     border-left: 5px solid #78c0a8;
+
+    p {
+      width: 100%;
+    }
 
     li {
       width: calc(100% - 50px);
