@@ -17,8 +17,9 @@ export const getPostsByCategory = (posts, category) => {
     const posts = postsFilteredByCategory.filter((post) => {
       return post.createdAt.getFullYear() === year;
     });
+    const reversedPosts = posts.reverse();
 
-    return { year, posts };
+    return { year, posts: reversedPosts };
   });
 
   return transformedPosts.reverse();

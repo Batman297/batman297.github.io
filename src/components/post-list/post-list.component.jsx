@@ -16,7 +16,10 @@ const PostList = ({ year, posts }) => {
       <ListContainer>
         {posts.map((post, index) => {
           return (
-            <PostLink key={`post-list${index}`} to={`/blog/${post.slug}`}>
+            <PostLink
+              key={`post-list${index}`}
+              to={`/blog/${post.id}/${post.slug}`}
+            >
               <PostTitle>{post.title}</PostTitle>
               <PostDate>{getCustomDate(post.createdAt)}</PostDate>
             </PostLink>
