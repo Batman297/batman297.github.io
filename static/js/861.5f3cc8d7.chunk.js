@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkMy_portfolio_and_blog_app=self.webpackChunkMy_portfolio_and_blog_app||[]).push([[861],{861:function(o,p,a){o.exports=a.p+"static/media/hello-world.b79f46aa3d840e8643e2.md"}}]);
