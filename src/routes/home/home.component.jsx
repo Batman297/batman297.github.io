@@ -67,7 +67,7 @@ const Home = () => {
     <HomeContainer>
       <AuthorInfo />
       <ElementContainer>
-        <ElementTitle>My recent projects</ElementTitle>
+        <ElementTitle id="my-projects">My recent projects</ElementTitle>
         {projects.map((project, index) => (
           <Porject
             key={`project${index}`}
