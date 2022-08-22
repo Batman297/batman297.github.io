@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { ReactComponent as BarSolid } from "../../assets/bars-solid.svg";
 import { ReactComponent as XmarkSolid } from "../../assets/xmark-solid.svg";
@@ -40,6 +41,7 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-weight: bold;
 
   @media screen and (max-width: 1050px) {
     padding-right: 25px;
@@ -55,6 +57,22 @@ export const NavLink = styled(Link)`
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+
+  @media screen and (max-width: 549px) {
+    display: none;
+  }
+`;
+
+export const CustomLink = styled.a`
+  font-weight: bold;
+
+  @media screen and (max-width: 549px) {
+    display: none;
+  }
+`;
+
+export const NavHashLink = styled(HashLink)`
+  margin-left: 15px;
 
   @media screen and (max-width: 549px) {
     display: none;
@@ -94,5 +112,13 @@ export const NavLinksMobile = styled.div`
 `;
 
 export const NavLinkMobile = styled(Link)`
+  font-weight: bold;
+`;
+
+export const NavHashLinkMobile = styled(HashLink)`
+  font-weight: bold;
+`;
+
+export const CustomLinkMobile = styled.a`
   font-weight: bold;
 `;

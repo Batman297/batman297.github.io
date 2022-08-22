@@ -7,6 +7,8 @@ import remarkGfm from "remark-gfm";
 import { posts } from "../../blog-posts/posts";
 import { getCustomDate } from "../../utils/blog-posts.helper";
 
+import NotFound from "../../components/not-found/not-found.component";
+
 import {
   BlogPostContainer,
   Header,
@@ -23,8 +25,11 @@ const BlogPost = () => {
     return post.id === Number(id);
   })[0];
 
+  const postId = !post ? "" : post.id;
+  const postSlug = !post ? "" : post.slug;
+
   useEffect(() => {
-    import(`../../blog-posts/${post.id}/${post.slug}.md`)
+    import(`../../blog-posts/${postId}/${postSlug}.md`)
       .then((res) => {
         fetch(res.default)
           .then((response) => response.text())
@@ -36,15 +41,9 @@ const BlogPost = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [post.id, post.slug]);
+  }, [postId, postSlug]);
 
-  if (!post)
-    return (
-      <h2>
-        I haven't wrote anything using this url. Please make sure you typed the
-        right one.
-      </h2>
-    );
+  if (!post) return <NotFound />;
 
   const getDateStringHandler = getCustomDate(post.createdAt);
 

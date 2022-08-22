@@ -4,6 +4,7 @@ import SkillTag from "../../components/skill-tag/skill-tag.component";
 
 import imageOneUrl from "../../assets/breactjs-simplestore.png";
 import imageTwoUrl from "../../assets/portfolio-blog-project.png";
+import imageThreeUrl from "../../assets/addiction-metter.png";
 
 import {
   HomeContainer,
@@ -27,7 +28,7 @@ const projects = [
   },
   {
     projectTitle: "AddictionMetter",
-    imageUrl: imageOneUrl,
+    imageUrl: imageThreeUrl,
     viewUrl: null,
     repoUrl: "https://github.com/tridenda/AddictionMeter",
     color: "yellow",
@@ -67,7 +68,7 @@ const Home = () => {
     <HomeContainer>
       <AuthorInfo />
       <ElementContainer>
-        <ElementTitle>My recent projects</ElementTitle>
+        <ElementTitle id="my-projects">My recent projects</ElementTitle>
         {projects.map((project, index) => (
           <Porject
             key={`project${index}`}

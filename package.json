@@ -1,5 +1,5 @@
 {
-  "name": "My portfolio and blog app",
+  "name": "My portfolio and blog",
   "homepage": "http://tridenda.github.io",
   "version": "1.0.0",
   "private": true,
@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.3",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "remark-gfm": "^3.0.1",
     "remark-reference-links": "^6.0.1",
