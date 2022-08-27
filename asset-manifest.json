@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.a9537b5a.js",
+    "main.js": "/static/js/main.76ee3f10.js",
     "static/js/861.42936d4a.chunk.js": "/static/js/861.42936d4a.chunk.js",
     "static/js/787.deddc8ed.chunk.js": "/static/js/787.deddc8ed.chunk.js",
     "static/media/tridenda-resume.pdf": "/static/media/tridenda-resume.4d2287229f6a11fa0523.pdf",
     "static/media/tridenda.png": "/static/media/tridenda.c2689dbcceaac221e7e9.png",
-    "static/media/breactjs-simplestore.png": "/static/media/breactjs-simplestore.c189872a8da79c524d0f.png",
+    "static/media/breactjs-simplestore.png": "/static/media/breactjs-simplestore.c9315190ee406597da90.png",
+    "static/media/smartbrain-facedetection.png": "/static/media/smartbrain-facedetection.ae2822abeab0d190afc6.png",
     "static/media/portfolio-blog-project.png": "/static/media/portfolio-blog-project.7fc92454c4f226d7e122.png",
     "static/media/addiction-metter.png": "/static/media/addiction-metter.1ee4d7ab048e5e85230e.png",
     "static/media/hello-world.md": "/static/media/hello-world.b79f46aa3d840e8643e2.md",
     "index.html": "/index.html",
     "static/media/xmark-solid.svg": "/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
     "static/media/bars-solid.svg": "/static/media/bars-solid.cc422b9702b29002bb1a1f973c66332a.svg",
-    "main.a9537b5a.js.map": "/static/js/main.a9537b5a.js.map",
+    "main.76ee3f10.js.map": "/static/js/main.76ee3f10.js.map",
     "787.deddc8ed.chunk.js.map": "/static/js/787.deddc8ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a9537b5a.js"
+    "static/js/main.76ee3f10.js"
   ]
 }
