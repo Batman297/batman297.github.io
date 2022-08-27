@@ -2,9 +2,10 @@ import AuthorInfo from "../../components/author-info/author-info.component";
 import Porject from "../../components/project/project.component";
 import SkillTag from "../../components/skill-tag/skill-tag.component";
 
-import imageOneUrl from "../../assets/breactjs-simplestore.png";
-import imageTwoUrl from "../../assets/portfolio-blog-project.png";
-import imageThreeUrl from "../../assets/addiction-metter.png";
+import breactjsUrl from "../../assets/breactjs-simplestore.png";
+import portfolioUrl from "../../assets/portfolio-blog-project.png";
+import addictionMetterUrl from "../../assets/addiction-metter.png";
+import smartbrainUrl from "../../assets/smartbrain-facedetection.png";
 
 import {
   HomeContainer,
@@ -16,7 +17,7 @@ import {
 const projects = [
   {
     projectTitle: "Breactjs SimpleStore",
-    imageUrl: imageOneUrl,
+    imageUrl: breactjsUrl,
     viewUrl: "https://breactjs-simplestore.netlify.app/",
     repoUrl: "https://github.com/tridenda/BreactjsSimpleStore",
     color: "blue",
@@ -27,11 +28,23 @@ const projects = [
     ],
   },
   {
+    projectTitle: "Smart Brain",
+    imageUrl: smartbrainUrl,
+    viewUrl: "https://tridenda.github.io/smart-brain/",
+    repoUrl: "https://github.com/tridenda/smart-brain",
+    color: "yellow",
+    description: [
+      "Built a face recognition app using Clarifai API",
+      "Built the frontend using React JS & REST API",
+      "Also, built the backend using Express JS & PostgreSQL",
+    ],
+  },
+  {
     projectTitle: "AddictionMetter",
-    imageUrl: imageThreeUrl,
+    imageUrl: addictionMetterUrl,
     viewUrl: null,
     repoUrl: "https://github.com/tridenda/AddictionMeter",
-    color: "yellow",
+    color: "green",
     description: [
       "Built an expert system app for detection online game addiction using certainty factor algorithm",
       "Built it using React Native and integrated with Firebase",
@@ -39,10 +52,10 @@ const projects = [
   },
   {
     projectTitle: "Portfolio & Blog Project",
-    imageUrl: imageTwoUrl,
+    imageUrl: portfolioUrl,
     viewUrl: "https://tridenda.github.io/",
     repoUrl: "https://github.com/tridenda/tridenda.github.io",
-    color: "green",
+    color: "red",
     description: [
       "Build my own portfolio and blog web using ReactJS",
       "Responsive view on desktop, tablet, or mobile",
