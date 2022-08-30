@@ -8,7 +8,7 @@ import {
 import CategoryButton from "../../components/category-button/category-button.component";
 import PostList from "../../components/post-list/post-list.component";
 
-import { posts } from "../../blog-posts/posts";
+import { posts } from "../../data/blog-posts/posts";
 
 import {
   BlogContainer,

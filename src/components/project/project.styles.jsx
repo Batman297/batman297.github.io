@@ -32,6 +32,10 @@ export const GreenProjectContainer = styled(BaseProjectContainer)`
   background-color: #93dec7;
 `;
 
+export const RedProjectContainer = styled(BaseProjectContainer)`
+  background-color: #ffa3a3;
+`;
+
 export const ImageContainer = styled.div`
   display: flex;
   align-items: center;

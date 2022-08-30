@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkReferenceLinks from "remark-reference-links";
 import remarkGfm from "remark-gfm";
 
-import { posts } from "../../blog-posts/posts";
+import { posts } from "../../data/blog-posts/posts";
 import { getCustomDate } from "../../utils/blog-posts.helper";
 
 import NotFound from "../../components/not-found/not-found.component";
@@ -29,7 +29,7 @@ const BlogPost = () => {
   const postSlug = !post ? "" : post.slug;
 
   useEffect(() => {
-    import(`../../blog-posts/${postId}/${postSlug}.md`)
+    import(`../../data/blog-posts/${postId}/${postSlug}.md`)
       .then((res) => {
         fetch(res.default)
           .then((response) => response.text())

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 export const AuthorInfoContainer = styled.div`
   width: 100%;
   display: flex;
@@ -67,5 +69,25 @@ export const DescriptionText = styled.p`
 export const CustomLine = styled.hr`
   @media screen and (max-width: 750px) {
     margin: 5px 0;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const DownloadButtonLink = styled.a`
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
+export const CustomButtonLink = styled(Link)`
+  &:hover {
+    text-decoration: none;
   }
 `;

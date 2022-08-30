@@ -4,8 +4,6 @@ import { Outlet } from "react-router-dom";
 import Footer from "../../components/footer/footer.component";
 import Wrapper from "../../components/wrapper/wrapper.component";
 
-import myResumeUrl from "../../assets/tridenda-resume.pdf";
-
 import {
   NavigationContainer,
   TitleContainer,
@@ -16,9 +14,7 @@ import {
   XmarkButton,
   NavLinksMobile,
   NavLinkMobile,
-  CustomLink,
   NavHashLinkMobile,
-  CustomLinkMobile,
 } from "./navigation.styles";
 
 const Navigation = () => {
@@ -35,9 +31,7 @@ const Navigation = () => {
           <h1>TRI DENDA</h1>
         </TitleContainer>
         <NavLinks>
-          <CustomLink href={myResumeUrl} download>
-            RESUME
-          </CustomLink>
+          <NavLink to="about">ABOUT</NavLink>
           <NavLink to="blog">BLOG</NavLink>
           <NavHashLink smooth to="/#my-projects">
             PROJECTS
@@ -48,9 +42,7 @@ const Navigation = () => {
       </NavigationContainer>
       {isOpen && (
         <NavLinksMobile>
-          <CustomLinkMobile href={myResumeUrl} download>
-            RESUME
-          </CustomLinkMobile>
+          <NavLinkMobile to="about">ABOUT</NavLinkMobile>
           <NavLinkMobile to="blog">BLOG</NavLinkMobile>
           <NavHashLinkMobile smooth to="/#my-projects">
             PROJECTS

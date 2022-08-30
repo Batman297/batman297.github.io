@@ -7,6 +7,7 @@ import {
   BlueProjectContainer,
   YellowProjectContainer,
   GreenProjectContainer,
+  RedProjectContainer,
   LinkContainer,
 } from "./project.styles";
 
@@ -15,6 +16,7 @@ export const PROJECT_TYPES_CLASSES = {
   blue: "blue",
   yellow: "yellow",
   green: "green",
+  red: "red",
 };
 
 const getContainerType = (color = PROJECT_TYPES_CLASSES.base) =>
@@ -23,6 +25,7 @@ const getContainerType = (color = PROJECT_TYPES_CLASSES.base) =>
     [PROJECT_TYPES_CLASSES.blue]: BlueProjectContainer,
     [PROJECT_TYPES_CLASSES.yellow]: YellowProjectContainer,
     [PROJECT_TYPES_CLASSES.green]: GreenProjectContainer,
+    [PROJECT_TYPES_CLASSES.red]: RedProjectContainer,
   }[color]);
 
 const Project = ({ color, contains }) => {
@@ -44,9 +47,17 @@ const Project = ({ color, contains }) => {
           </ul>
         </ListContainer>
         <LinkContainer>
-          {viewUrl && <a href={viewUrl}>Live View</a>}
+          {viewUrl && (
+            <a href={viewUrl} target="_blank" rel="noreferrer">
+              Live View
+            </a>
+          )}
           {viewUrl && repoUrl && <span>or</span>}
-          {repoUrl && <a href={repoUrl}>Source Code</a>}
+          {repoUrl && (
+            <a href={repoUrl} target="_blank" rel="noreferrer">
+              Source Code
+            </a>
+          )}
         </LinkContainer>
       </DescriptionContainer>
     </Container>
