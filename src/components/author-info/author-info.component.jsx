@@ -1,4 +1,5 @@
 import authorPhotoUrl from "../../assets/tridenda.png";
+import Button from "../button/button.component";
 import {
   AuthorInfoContainer,
   TextContainer,
@@ -6,6 +7,7 @@ import {
   RolesText,
   DescriptionText,
   CustomLine,
+  ButtonContainer,
 } from "./author-info.styles";
 
 const AuthorInfo = () => {
@@ -23,6 +25,10 @@ const AuthorInfo = () => {
           raise awareness of porn’s negative effects and help addicts to free
           themselves from porn addiction.
         </DescriptionText>
+        <ButtonContainer>
+          <Button>Resume</Button>
+          <Button>Know more</Button>
+        </ButtonContainer>
       </TextContainer>
     </AuthorInfoContainer>
   );

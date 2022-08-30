@@ -69,3 +69,11 @@ export const CustomLine = styled.hr`
     margin: 5px 0;
   }
 `;
+
+export const ButtonContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
