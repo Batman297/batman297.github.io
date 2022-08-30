@@ -13,6 +13,7 @@ export const BaseButton = styled.button`
   font-weight: bold;
   border: 2px solid black;
   cursor: pointer;
+  color: black;
 
   background: linear-gradient(to left, #e8e8e8 50%, black 50%) right;
   background-size: 200%;

@@ -9,7 +9,7 @@ const About = () => {
   const [markdown, setMarkdown] = useState("");
 
   useEffect(() => {
-    import(`./_about.md`)
+    import(`../../data/about.md`)
       .then((res) => {
         fetch(res.default)
           .then((response) => response.text())

@@ -20,7 +20,7 @@ const AuthorInfo = () => {
       <img src={authorPhotoUrl} alt="Author face" />
       <TextContainer>
         <NameText>TRI DENDA</NameText>
-        <RolesText>FULLSTACK DEVELOPER</RolesText>
+        <RolesText>WEB DEVELOPER</RolesText>
         <CustomLine />
         <DescriptionText>
           I'm an enthusiastic web developer who loves solving problems and
