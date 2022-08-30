@@ -63,14 +63,6 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const CustomLink = styled.a`
-  font-weight: bold;
-
-  @media screen and (max-width: 549px) {
-    display: none;
-  }
-`;
-
 export const NavHashLink = styled(HashLink)`
   margin-left: 15px;
 
@@ -116,9 +108,5 @@ export const NavLinkMobile = styled(Link)`
 `;
 
 export const NavHashLinkMobile = styled(HashLink)`
-  font-weight: bold;
-`;
-
-export const CustomLinkMobile = styled.a`
   font-weight: bold;
 `;

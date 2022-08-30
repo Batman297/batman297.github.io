@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 export const AuthorInfoContainer = styled.div`
   width: 100%;
   display: flex;
@@ -76,4 +78,16 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+`;
+
+export const DownloadButtonLink = styled.a`
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
+export const CustomButtonLink = styled(Link)`
+  &:hover {
+    text-decoration: none;
+  }
 `;
