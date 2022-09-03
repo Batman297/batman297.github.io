@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.da5fadc0.js",
+    "main.js": "/static/js/main.0fd58425.js",
     "static/js/625.3c9a8c9e.chunk.js": "/static/js/625.3c9a8c9e.chunk.js",
     "static/js/232.16162bbe.chunk.js": "/static/js/232.16162bbe.chunk.js",
     "static/js/787.deddc8ed.chunk.js": "/static/js/787.deddc8ed.chunk.js",
-    "static/media/tridenda-resume.pdf": "/static/media/tridenda-resume.aaa0fd1dd0835795fe10.pdf",
+    "static/media/tridenda-resume-2.0.4.pdf": "/static/media/tridenda-resume-2.0.4.563f2e965050a3e29f60.pdf",
     "static/media/tridenda.png": "/static/media/tridenda.c2689dbcceaac221e7e9.png",
     "static/media/breactjs-simplestore.png": "/static/media/breactjs-simplestore.c9315190ee406597da90.png",
     "static/media/smartbrain-facedetection.png": "/static/media/smartbrain-facedetection.ae2822abeab0d190afc6.png",
@@ -15,10 +15,10 @@
     "index.html": "/index.html",
     "static/media/xmark-solid.svg": "/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
     "static/media/bars-solid.svg": "/static/media/bars-solid.cc422b9702b29002bb1a1f973c66332a.svg",
-    "main.da5fadc0.js.map": "/static/js/main.da5fadc0.js.map",
+    "main.0fd58425.js.map": "/static/js/main.0fd58425.js.map",
     "787.deddc8ed.chunk.js.map": "/static/js/787.deddc8ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.da5fadc0.js"
+    "static/js/main.0fd58425.js"
   ]
 }
