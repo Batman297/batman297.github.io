@@ -1,5 +1,5 @@
 import authorPhotoUrl from "../../assets/tridenda.png";
-import myResumeUrl from "../../assets/tridenda-resume-2.0.4.pdf";
+import myResumeUrl from "../../assets/Tri_Denda_Resume.pdf";
 
 import Button from "../button/button.component";
 import {
