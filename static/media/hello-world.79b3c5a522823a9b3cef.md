@@ -1,5 +1,3 @@
-Hello, there!
-
 Welcome to my blog. This is my first post and intended to be a guidance and documentation how to write a post.
 
 I decided starting to write blog because I want to improve my english writing skill. So, in the future there will be a lot of posts in English. I openly accept critiques and suggestions if you found some mistaken grammar or anything that can improve my writing skill.
