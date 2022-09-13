@@ -23,11 +23,10 @@ const AuthorInfo = () => {
         <RolesText>WEB DEVELOPER</RolesText>
         <CustomLine />
         <DescriptionText>
-          I'm an enthusiastic web developer who loves solving problems and
-          making meaningful impacts through the products that I built. For me,
-          programming languages are just tools to help solve those problems. And
-          for now, I use JavaScript as my primary language to build the
-          frontend, backend, and mobile app.
+          I am a passionate web developer who loves solving problems and making
+          meaningful impacts on others' lives through the products that I built.
+          For me, creating products is about identifying the problems to create
+          effective solutions to solve its problems.
         </DescriptionText>
         <ButtonContainer>
           <DownloadButtonLink href={myResumeUrl} download>
