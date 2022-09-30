@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.a151e844.js",
+    "main.js": "/static/js/main.c6c534b6.js",
     "static/js/625.3c9a8c9e.chunk.js": "/static/js/625.3c9a8c9e.chunk.js",
     "static/js/232.654dc16f.chunk.js": "/static/js/232.654dc16f.chunk.js",
     "static/js/178.b76243dd.chunk.js": "/static/js/178.b76243dd.chunk.js",
@@ -8,7 +8,7 @@
     "static/media/tridenda.png": "/static/media/tridenda.c2689dbcceaac221e7e9.png",
     "static/media/breactjs-simplestore.png": "/static/media/breactjs-simplestore.c9315190ee406597da90.png",
     "static/media/smartbrain-facedetection.png": "/static/media/smartbrain-facedetection.ae2822abeab0d190afc6.png",
-    "static/media/Tri_Denda_Resume.pdf": "/static/media/Tri_Denda_Resume.cf0129a1198c26aada41.pdf",
+    "static/media/Tri_Denda_Resume.pdf": "/static/media/Tri_Denda_Resume.e91531a0b04fd22546ad.pdf",
     "static/media/portfolio-blog-project.png": "/static/media/portfolio-blog-project.7fc92454c4f226d7e122.png",
     "static/media/addiction-metter.png": "/static/media/addiction-metter.1ee4d7ab048e5e85230e.png",
     "static/media/does-philosophy-lead-to-atheism-and-agnoticism.md": "/static/media/does-philosophy-lead-to-atheism-and-agnoticism.b062875973fd72ceb84f.md",
@@ -17,10 +17,10 @@
     "index.html": "/index.html",
     "static/media/xmark-solid.svg": "/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
     "static/media/bars-solid.svg": "/static/media/bars-solid.cc422b9702b29002bb1a1f973c66332a.svg",
-    "main.a151e844.js.map": "/static/js/main.a151e844.js.map",
+    "main.c6c534b6.js.map": "/static/js/main.c6c534b6.js.map",
     "787.deddc8ed.chunk.js.map": "/static/js/787.deddc8ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a151e844.js"
+    "static/js/main.c6c534b6.js"
   ]
 }
