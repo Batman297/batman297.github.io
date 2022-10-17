@@ -1,9 +1,21 @@
+import nextflixUrl from "../assets/nextflix.png";
 import breactjsUrl from "../assets/breactjs-simplestore.png";
-import portfolioUrl from "../assets/portfolio-blog-project.png";
 import addictionMetterUrl from "../assets/addiction-metter.png";
 import smartbrainUrl from "../assets/smartbrain-facedetection.png";
 
 export const projects = [
+  {
+    projectTitle: "Netflix Clone",
+    imageUrl: nextflixUrl,
+    viewUrl: "https://nextflix-by-tridenda.vercel.app/",
+    repoUrl: "https://github.com/tridenda/nextflix",
+    color: "red",
+    description: [
+      "Built it using Next JS integrated it with GraphQL API",
+      "Built authentication using Bearertoken",
+      "Integrated with Youtube API",
+    ],
+  },
   {
     projectTitle: "Breactjs SimpleStore",
     imageUrl: breactjsUrl,
@@ -39,17 +51,6 @@ export const projects = [
       "Built expert system while I was working on my final project as a college student",
       "Implemented Certainty Factor algorithm",
       "Built it using React Native (Expo) for fast implementation",
-    ],
-  },
-  {
-    projectTitle: "Portfolio & Blog Project",
-    imageUrl: portfolioUrl,
-    viewUrl: "https://tridenda.github.io/",
-    repoUrl: "https://github.com/tridenda/tridenda.github.io",
-    color: "red",
-    description: [
-      "Built a portfolio and blog web",
-      "Built the responsive view on desktop, mobile, and tablet",
     ],
   },
 ];
