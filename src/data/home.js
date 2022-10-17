@@ -1,9 +1,21 @@
+import nextflixUrl from "../assets/nextflix.png";
 import breactjsUrl from "../assets/breactjs-simplestore.png";
-import portfolioUrl from "../assets/portfolio-blog-project.png";
 import addictionMetterUrl from "../assets/addiction-metter.png";
 import smartbrainUrl from "../assets/smartbrain-facedetection.png";
 
 export const projects = [
+  {
+    projectTitle: "Netflix Clone",
+    imageUrl: nextflixUrl,
+    viewUrl: "https://nextflix-by-tridenda.vercel.app/",
+    repoUrl: "https://github.com/tridenda/nextflix",
+    color: "red",
+    description: [
+      "Built it using Next JS integrated it with GraphQL API",
+      "Built authentication using Bearertoken",
+      "Integrated with Youtube API",
+    ],
+  },
   {
     projectTitle: "Breactjs SimpleStore",
     imageUrl: breactjsUrl,
@@ -11,9 +23,9 @@ export const projects = [
     repoUrl: "https://github.com/tridenda/BreactjsSimpleStore",
     color: "blue",
     description: [
-      "Built an online store using ReactJS",
-      "Integrated with Firebase and Stripe",
-      "Manage context using Redux",
+      "Built it using React and Redux",
+      "API integration with Firebase and Stripe",
+      "Built many features such as responsive design, register/login using email and Google account",
     ],
   },
   {
@@ -23,9 +35,10 @@ export const projects = [
     repoUrl: "https://github.com/tridenda/smart-brain",
     color: "yellow",
     description: [
-      "Built a face recognition app using Clarifai API",
-      "Built the frontend using React JS & REST API",
-      "Also, built the backend using Express JS & PostgreSQL",
+      "Built it using React JS and Redux",
+      "Integrated with Clarifai API for detecting faces using AI",
+      "Created backend app using Express JS and PostgreSQL",
+      "Created and integrated with REST API",
     ],
   },
   {
@@ -35,19 +48,9 @@ export const projects = [
     repoUrl: "https://github.com/tridenda/AddictionMeter",
     color: "green",
     description: [
-      "Built an expert system app for detection online game addiction using certainty factor algorithm",
-      "Built it using React Native and integrated with Firebase",
-    ],
-  },
-  {
-    projectTitle: "Portfolio & Blog Project",
-    imageUrl: portfolioUrl,
-    viewUrl: "https://tridenda.github.io/",
-    repoUrl: "https://github.com/tridenda/tridenda.github.io",
-    color: "red",
-    description: [
-      "Build my own portfolio and blog web using ReactJS",
-      "Responsive view on desktop, tablet, or mobile",
+      "Built expert system while I was working on my final project as a college student",
+      "Implemented Certainty Factor algorithm",
+      "Built it using React Native (Expo) for fast implementation",
     ],
   },
 ];
