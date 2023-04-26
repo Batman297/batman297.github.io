@@ -45,6 +45,7 @@ type BlogProps = {
 const Blog: FC<BlogProps> = ({ posts }) => {
   return (
     <>
+      <h1>Blog</h1>
       {posts.map((post) => {
         const { date, day, month, year } = dateFormatter(post.date);
 
