@@ -1,21 +1,23 @@
+import Link from "next/link";
+
 export type NavbarProps = {};
 
 const Navbar: React.FC<NavbarProps> = () => {
   return (
     <div className="flex justify-between w-[600px] mx-auto bg-blue text-sm my-5">
-      <a href="">
+      <Link href="/">
         <h1>TRI DENDA</h1>
-      </a>
+      </Link>
       <ul className="flex gap-3">
-        <a href="">
+        <Link href="/about">
           <li>ABOUT</li>
-        </a>
-        <a href="">
+        </Link>
+        <Link href="/blog">
           <li>BLOG</li>
-        </a>
-        <a href="">
+        </Link>
+        <Link href="/">
           <li>PROJECTS</li>
-        </a>
+        </Link>
       </ul>
     </div>
   );
