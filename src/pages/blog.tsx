@@ -8,12 +8,15 @@ import dateFormatter from "@src/lib/date-formatter";
 
 export const getStaticProps = async () => {
   // Get files from the posts directory
-  const files = fs.readdirSync(path.join("posts"));
+  const files = fs.readdirSync(path.join("data", "posts"));
 
   // Get slug and frontmatter from posts
   const posts = files.map((filename) => {
     // Get frontmatter
-    const fileContents = fs.readFileSync(path.join("posts", filename), "utf-8");
+    const fileContents = fs.readFileSync(
+      path.join("data", "posts", filename),
+      "utf-8"
+    );
     const matterResult = matter(fileContents);
 
     return {

@@ -12,7 +12,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="w-[600px] mx-auto">{children}</main>
+      <main className="max-w-[600px] mx-auto px-3">{children}</main>
       <Footer />
     </>
   );

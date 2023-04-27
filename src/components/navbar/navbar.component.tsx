@@ -4,7 +4,7 @@ export type NavbarProps = {};
 
 const Navbar: React.FC<NavbarProps> = () => {
   return (
-    <div className="flex justify-between w-[600px] mx-auto bg-blue text-sm my-5">
+    <div className="flex justify-between max-w-[600px] mx-auto bg-blue text-sm my-5 px-3">
       <Link href="/">
         <h1>TRI DENDA</h1>
       </Link>

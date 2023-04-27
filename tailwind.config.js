@@ -6,6 +6,16 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xs: "375px",
+      sm: "600px",
+      md: "900px",
+      lg: "1024px",
+      xl: "1536px",
+    },
+    width: {
+      600: "600px",
+    },
     extend: {
       typography: (theme) => ({
         DEFAULT: {

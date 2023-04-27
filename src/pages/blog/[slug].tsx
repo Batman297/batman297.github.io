@@ -7,7 +7,7 @@ import { FC } from "react";
 
 export const getStaticPaths = async () => {
   // Get files from the posts directory
-  const files = fs.readdirSync(path.join("posts"));
+  const files = fs.readdirSync(path.join("data", "posts"));
 
   return {
     paths: files.map((filename) => {
@@ -23,7 +23,10 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context: any) => {
   const filename = context.params.slug + ".md";
-  const content = fs.readFileSync(path.join("posts", filename), "utf-8");
+  const content = fs.readFileSync(
+    path.join("data", "posts", filename),
+    "utf-8"
+  );
   const matterResult = matter(content);
 
   return {

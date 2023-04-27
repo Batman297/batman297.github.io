@@ -2,7 +2,7 @@ export type FooterProps = {};
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <div className="flex flex items-center flex-col w-[600px] mx-auto text-center leading-7 mt-5 py-5">
+    <div className="flex flex items-center flex-col max-w-[600px] mx-auto text-center leading-7 mt-5 py-5 px-3">
       <span className="font-bold text-xl">Let’s connect</span>
       <span className="text-sm">
         Get in touch for opportunities or just to say hi!
