@@ -1,6 +1,7 @@
+import ProjectView from "@src/components/project-view/project-view.component";
 import { about, projects, skills } from "../../data/portfolio";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <div className="flex flex-col items-center my-12">
@@ -13,21 +14,20 @@ export default function Home() {
         <span className="max-w-[500px] text-center">{about.description}</span>
       </div>
 
-      <div>
+      <div className="my-3">
+        <span className="font-bold">My recent projects</span>
         {projects.map((project, index) => {
-          return (
-            <div key={`project-${index}`}>
-              <span>{project.name}</span>
-            </div>
-          );
+          return <ProjectView key={`project-${index}`} project={project} />;
         })}
       </div>
 
-      <div>
+      <div className="my-3">
         {skills.map((skill, index) => (
           <span key={`skill-${index}`}>{skill}</span>
         ))}
       </div>
     </>
   );
-}
+};
+
+export default Home;

@@ -17,6 +17,8 @@ export const projects = [
         Created a prototype design using Figma and implemented the design using 
         NextJS, TypeScript, and Tailwindcss.
       `,
+    bgColor: "blue",
+    url: "https://github.com/yukpulih/yukpulih",
   },
   {
     name: "Online Store Web App",
@@ -25,14 +27,18 @@ export const projects = [
         Created an online store web app using ReactJS, TypeScript, Redux and integrated 
         with Stripe payment gateway while I was learning ReactJS.
       `,
+    bgColor: "orange",
+    url: "https://github.com/tridenda/BreactjsSimpleStore",
   },
   {
     name: "Expert System Mobile",
-    imageUrl: "/images/expert-system-mobile.png",
+    imageUrl: "/images/expert-system-mobile-app.png",
     description: `
         Built expert system mobile app for detecting online game addiction and implemented 
         certainty factor algorithm while I was learning React native.  
       `,
+    bgColor: "red",
+    url: "https://github.com/tridenda/AddictionMeter",
   },
 ];
 
