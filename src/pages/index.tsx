@@ -1,4 +1,5 @@
 import ProjectView from "@src/components/project-view/project-view.component";
+import SkillView from "@src/components/skill-view/skill-view.component";
 import { about, projects, skills } from "../../data/portfolio";
 
 const Home = () => {
@@ -14,17 +15,20 @@ const Home = () => {
         <span className="max-w-[500px] text-center">{about.description}</span>
       </div>
 
-      <div className="my-3">
+      <div className="my-10">
         <span className="font-bold">My recent projects</span>
         {projects.map((project, index) => {
           return <ProjectView key={`project-${index}`} project={project} />;
         })}
       </div>
 
-      <div className="my-3">
-        {skills.map((skill, index) => (
-          <span key={`skill-${index}`}>{skill}</span>
-        ))}
+      <div className="my-5">
+        <span className="font-bold">My recent projects</span>
+        <div className="flex flex-wrap justify-start gap-2 my-3">
+          {skills.map((skill, index) => (
+            <SkillView key={`skill-${index}`} skill={skill} />
+          ))}
+        </div>
       </div>
     </>
   );
