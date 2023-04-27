@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import clsx from "@src/lib/clsx";
 import Link from "next/link";
 import { FC } from "react";
 
