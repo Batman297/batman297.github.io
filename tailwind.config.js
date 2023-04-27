@@ -13,9 +13,6 @@ module.exports = {
       lg: "1024px",
       xl: "1536px",
     },
-    width: {
-      600: "600px",
-    },
     extend: {
       typography: (theme) => ({
         DEFAULT: {
