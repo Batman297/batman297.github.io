@@ -66,11 +66,12 @@ const Blog: FC<BlogProps> = ({ posts }) => {
                   <div
                     className={clsx(
                       "flex flex-col-reverse border-t py-2 text-sm",
+                      "md:flex-row md:items-center md:justify-between md:hover:pl-2 md:hover:transition-all",
                       post.contents.length == ++index && "border-y"
                     )}
                   >
-                    <span className="">{content.title}</span>
-                    <span className="text-xs text-gray-500">{`${day}, ${month} ${date}, ${year}`}</span>
+                    <span className="md:max-w-[430px]">{content.title}</span>
+                    <span className="text-xs text-gray-500 md:max-w-[150px]">{`${day}, ${month} ${date}, ${year}`}</span>
                   </div>
                 </Link>
               );
