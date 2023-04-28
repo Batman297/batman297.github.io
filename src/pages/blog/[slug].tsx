@@ -1,4 +1,4 @@
-import dateFormatter from "@src/lib/helper";
+import { dateFormatter } from "@src/lib/helper";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
