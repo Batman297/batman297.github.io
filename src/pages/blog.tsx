@@ -4,7 +4,7 @@ import Link from "next/link";
 import path from "path";
 import { FC } from "react";
 
-import { clsx, dateFormatter } from "@src/lib/helper";
+import { clsx, dateFormatter, filterPostsByYear } from "@src/lib/helper";
 
 export const getStaticProps = async () => {
   // Get files from the posts directory
@@ -28,42 +28,54 @@ export const getStaticProps = async () => {
     };
   });
 
+  filterPostsByYear(posts);
+
   return {
     props: {
-      posts,
+      posts: filterPostsByYear(posts),
     },
   };
 };
 
 type BlogProps = {
   posts: {
-    title: string;
-    date: string;
-    subtitle: string;
-    category: string;
-    slug: string;
+    year: string;
+    contents: {
+      title: string;
+      date: string;
+      subtitle: string;
+      category: string;
+      slug: string;
+    }[];
   }[];
 };
 
 const Blog: FC<BlogProps> = ({ posts }) => {
   return (
     <>
-      <h2 className="font-bold text-lg my-3">Blog</h2>
-      {posts.map((post, index) => {
-        const { date, day, month, year } = dateFormatter(post.date);
-
+      <h2 className="font-bold text-lg mt-3">Blog</h2>
+      {posts.map((post) => {
         return (
-          <Link key={post.slug} href={`blog/${post.slug}`}>
-            <div
-              className={clsx(
-                "flex flex-col-reverse border-t py-2 text-sm",
-                posts.length == ++index && "border-y"
-              )}
-            >
-              <span className="">{post.title}</span>
-              <span className="text-xs text-gray-500">{`${day}, ${month} ${date}, ${year}`}</span>
-            </div>
-          </Link>
+          <div key={`year-${post.year}`} className="flex flex-col">
+            <p className="font-bold mt-5 mb-2">{post.year}</p>
+            {post.contents.map((content, index) => {
+              const { date, day, month, year } = dateFormatter(content.date);
+
+              return (
+                <Link key={content.slug} href={`blog/${content.slug}`}>
+                  <div
+                    className={clsx(
+                      "flex flex-col-reverse border-t py-2 text-sm",
+                      post.contents.length == ++index && "border-y"
+                    )}
+                  >
+                    <span className="">{content.title}</span>
+                    <span className="text-xs text-gray-500">{`${day}, ${month} ${date}, ${year}`}</span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         );
       })}
     </>

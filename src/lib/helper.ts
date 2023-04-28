@@ -30,3 +30,38 @@ export function dateFormatter(dateStr: string) {
 export function clsx(...classes: (false | null | undefined | string)[]) {
   return classes.filter(Boolean).join(" ");
 }
+
+type PostsProps = {
+  title: string;
+  date: string;
+  subtitle: string;
+  category: string;
+  slug: string;
+}[];
+
+export function sortPostsByDate(posts: PostsProps) {
+  return posts.sort((a, b) => {
+    const dateA: any = new Date(a.date);
+    const dateB: any = new Date(b.date);
+    return dateB - dateA;
+  });
+}
+
+export function filterPostsByYear(posts: PostsProps) {
+  const sortedPosts = sortPostsByDate(posts);
+
+  const years = Array.from(
+    new Set(sortedPosts.map((post) => new Date(post.date).getFullYear()))
+  );
+
+  return years.map((year) => {
+    const filteredPosts = sortedPosts.filter(
+      (post) => new Date(post.date).getFullYear() == year
+    );
+
+    return {
+      year,
+      contents: filteredPosts,
+    };
+  });
+}
