@@ -57,8 +57,10 @@ const Post: FC<PostProps> = ({ post }) => {
 
   return (
     <>
-      <span>{`${day}, ${month} ${date}, ${year}`}</span>
-      <h3>{post.title}</h3>
+      <div className="text-center max-w-[550px] mx-auto my-10 text-gray-800">
+        <span>{`${day}, ${month} ${date}, ${year}`}</span>
+        <h3 className="text-3xl font-bold leading-8 my-5">{post.title}</h3>
+      </div>
       <article className="prose">
         <Markdown>{post.content}</Markdown>
       </article>

@@ -19,7 +19,7 @@ module.exports = {
           css: {
             color: theme("colors.gary.800"),
             lineHeight: "1.4em",
-            fontSize: "1.25em",
+            fontSize: "1em",
           },
         },
       }),

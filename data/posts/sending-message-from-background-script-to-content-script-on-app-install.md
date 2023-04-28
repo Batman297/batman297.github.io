@@ -1,5 +1,5 @@
 ---
-title: "Using AI to generate poetry"
+title: "Sending message from background script to content script on app install"
 subtitle: "I used GPT-3 to generate poetry and other creative content."
 date: "2021-08-27"
 category: ["ChatGPT", "AI"]
