@@ -4,7 +4,7 @@ import Link from "next/link";
 import path from "path";
 import { FC } from "react";
 
-import dateFormatter from "@src/lib/date-formatter";
+import { clsx, dateFormatter } from "@src/lib/helper";
 
 export const getStaticProps = async () => {
   // Get files from the posts directory
@@ -48,17 +48,22 @@ type BlogProps = {
 const Blog: FC<BlogProps> = ({ posts }) => {
   return (
     <>
-      <h1>Blog</h1>
-      {posts.map((post) => {
+      <h2 className="font-bold text-lg my-3">Blog</h2>
+      {posts.map((post, index) => {
         const { date, day, month, year } = dateFormatter(post.date);
 
         return (
-          <div key={post.slug}>
-            <Link href={`blog/${post.slug}`}>
-              <span>{post.title}</span>
-              <span>{`${day}, ${month} ${date}, ${year}`}</span>
-            </Link>
-          </div>
+          <Link key={post.slug} href={`blog/${post.slug}`}>
+            <div
+              className={clsx(
+                "flex flex-col-reverse border-t py-2 text-sm",
+                posts.length == ++index && "border-y"
+              )}
+            >
+              <span className="">{post.title}</span>
+              <span className="text-xs text-gray-500">{`${day}, ${month} ${date}, ${year}`}</span>
+            </div>
+          </Link>
         );
       })}
     </>

@@ -1,4 +1,5 @@
-export default function dateFormatter(dateStr: string) {
+// Format string to date
+export function dateFormatter(dateStr: string) {
   const date = new Date(dateStr);
 
   const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -23,4 +24,9 @@ export default function dateFormatter(dateStr: string) {
     month: monthNames[date.getMonth()],
     year: date.getFullYear(),
   };
+}
+
+// Concate tailwindcss classess
+export function clsx(...classes: (false | null | undefined | string)[]) {
+  return classes.filter(Boolean).join(" ");
 }

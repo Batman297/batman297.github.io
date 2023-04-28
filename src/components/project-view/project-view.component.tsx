@@ -1,6 +1,7 @@
-import clsx from "@src/lib/clsx";
 import Link from "next/link";
 import { FC } from "react";
+
+import { clsx } from "@src/lib/helper";
 
 export type ProjectViewProps = {
   project: {
