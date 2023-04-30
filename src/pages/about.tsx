@@ -1,6 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import Head from "next/head";
 import path from "path";
 import { FC } from "react";
 
@@ -38,12 +39,15 @@ type AboutProps = {
 
 const About: FC<AboutProps> = ({ about }) => {
   return (
-    <>
+    <div>
+      <Head>
+        <title>Tri Denda - About</title>
+      </Head>
       <h1 className="text-4xl font-bold text-gray-700 mt-12">{about.title}</h1>
       <article className="prose">
         <Markdown>{about.content}</Markdown>
       </article>
-    </>
+    </div>
   );
 };
 
