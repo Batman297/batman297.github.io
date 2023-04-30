@@ -5,6 +5,7 @@ import path from "path";
 import { FC } from "react";
 
 import { clsx, dateFormatter, filterPostsByYear } from "@src/lib/helper";
+import Head from "next/head";
 
 export const getStaticProps = async () => {
   // Get files from the posts directory
@@ -53,7 +54,10 @@ type BlogProps = {
 const Blog: FC<BlogProps> = ({ posts }) => {
   return (
     <>
-      <h2 className="font-bold text-lg mt-3">Blog</h2>
+      <Head>
+        <title>Blogs - Tri Denda</title>
+      </Head>
+      <h2 className="font-bold text-lg mt-3">Blogs</h2>
       {posts.map((post) => {
         return (
           <div key={`year-${post.year}`} className="flex flex-col">

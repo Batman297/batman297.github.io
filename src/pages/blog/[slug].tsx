@@ -2,6 +2,7 @@ import { dateFormatter } from "@src/lib/helper";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import Head from "next/head";
 import path from "path";
 import { FC } from "react";
 
@@ -57,6 +58,9 @@ const Post: FC<PostProps> = ({ post }) => {
 
   return (
     <>
+      <Head>
+        <title>{`${post.title}  - Tri Denda`}</title>
+      </Head>
       <div className="text-center max-w-[550px] mx-auto my-10 text-gray-800">
         <span>{`${day}, ${month} ${date}, ${year}`}</span>
         <h3 className="text-3xl font-bold leading-8 my-5">{post.title}</h3>
