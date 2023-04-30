@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 import { clsx } from "@src/lib/helper";
+import Image from "next/image";
 
 export type ProjectViewProps = {
   project: {
@@ -30,10 +31,12 @@ const ProjectView: FC<ProjectViewProps> = ({ project }) => {
     >
       <div className="flex justify-center py-3 mx-3">
         <Link href={project.url}>
-          <img
+          <Image
             className="max-w-[150px]"
             src={project.imageUrl}
             alt={project.name}
+            width={150}
+            height={150}
           />
         </Link>
       </div>

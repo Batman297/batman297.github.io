@@ -1,15 +1,18 @@
 import ProjectView from "@src/components/project-view/project-view.component";
 import SkillView from "@src/components/skill-view/skill-view.component";
+import Image from "next/image";
 import { about, projects, skills } from "../../data/portfolio";
 
 const Home = () => {
   return (
     <>
       <div className="flex flex-col items-center my-12">
-        <img
+        <Image
           src={about.imageUrl}
           alt="tridenda-profile"
           className="max-w-[150px] rounded-full"
+          width={150}
+          height={150}
         />
         <span className="font-bold text-[28px]">{about.name}</span>
         <span className="max-w-[500px] text-center">{about.description}</span>
