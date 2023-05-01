@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <Link href="/blog">
           <li>BLOG</li>
         </Link>
-        <Link href="/">
+        <Link href="/#projects">
           <li>PROJECTS</li>
         </Link>
       </ul>
